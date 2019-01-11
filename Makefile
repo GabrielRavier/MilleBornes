@@ -29,7 +29,7 @@ ifeq ($(detected_OS),Windows)
 	LDFLAGS += -static
 endif
 
-MAIN := main
+MAIN := Card Deck error filesystem Game loadConfig main Player
 
 OBJS := $(addprefix obj/, $(addsuffix .o, $(MAIN)))
 DEPS := $(addsuffix .d, $(OBJS))
@@ -39,6 +39,8 @@ all: bin/MilleBornes
 bin/MilleBornes: $(OBJS)
 	@mkdir -p $(@D)
 	$(LDFLAGS) $(OBJS) -o $@
+	@rm bin/data
+	@cp data bin/data
 
 # general compile
 obj/%.o: src/%.cpp
@@ -49,4 +51,4 @@ include $(wildcard $(DEPS))
 
 # Remove all objects files and the binary
 clean:
-	@rm -rf obj bin/MilleBornes
+	@rm -rf obj bin

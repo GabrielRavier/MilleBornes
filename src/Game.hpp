@@ -10,5 +10,5 @@ private:
 	std::vector<Player> m_players;
 
 public:
-
+	void startGameLoop();
 };

@@ -3,7 +3,13 @@
 
 class Card
 {
+private:
+	std::string m_description;
+
 public:
 	virtual bool use();
-	virtual std::string getDescription();
+	std::string getDescription()
+	{
+		return m_description;
+	};
 };

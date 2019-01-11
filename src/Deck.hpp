@@ -1,4 +1,5 @@
 #pragma once
+#include <vector>
 #include "Card.hpp"
 
 class Deck
@@ -6,6 +7,10 @@ class Deck
 private:
 	std::vector<Card *> m_cards;
 
-public:
+	void shuffle();
+	void makeDeck();
 	
+public:
+	Deck();
+	void reset();
 };

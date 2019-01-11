@@ -1,0 +1,53 @@
+{
+	"cardsNumbers": 
+	{
+		"outOfGas": 3,
+		"flatTire": 3,
+		"accident": 3,
+		"speedLimit": 4,
+		"stop": 5,
+		"gasoline": 6,
+		"spareTire": 6,
+		"repair": 6,
+		"endOfLimit": 6,
+		"roll": 14,
+		"extraTank": 1,
+		"punctureProof": 1,
+		"drivingAce": 1,
+		"rightOfWay": 1,
+		"distance25": 10,
+		"distance50": 10,
+		"distance75": 10,
+		"distance100": 12,
+		"distance200": 4
+	},
+
+	"cardsDescriptions":
+	{
+		"outOfGas": "Out of Gas. Play this card offensively onto your opponents' Battle Pile. By playing one, you temporarily prevent your opponents from gaining any further distance.",
+		"flatTire": "Flat Tire. Play this card offensively onto your opponents' Battle Pile. By playing one, you temporarily prevent your opponents from gaining any further distance.",
+		"accident": "Accident. Play this card offensively onto your opponents' Battle Pile. By playing one, you temporarily prevent your opponents from gaining any further distance.",
+		"stop": "Stop. Play this card offensively onto your opponents' Battle Pile. By playing one, you temporarily prevent your opponents from gaining any further distance.",
+		"speedLimit": "Speed Limit. Play this card onto your opponents' Speed Pile. While it is showing, your opponents can play 25-mile and 50-mile Distance Cards only.",
+		"gasoline": "Gasoline. Play this cards defensively onto your own teams's Battle Pile. Play one onto an Out of Gas card an opponent has played against you. By doing so, you overcome the hazard and may again be able to play a Distance Card.",
+		"spareTire": "Spare Tire. Play this cards defensively onto your own teams's Battle Pile. Play one onto a Flat Tire card an opponent has played against you. By doing so, you overcome the hazard and may again be able to play a Distance Card.",
+		"repair": "Repair. Play this cards defensively onto your own teams's Battle Pile. Play one onto an Accident card an opponent has played against you. By doing so, you overcome the hazard and may again be able to play a Distance Card.",
+		"roll": "Roll. Play this card onto a Stop Card an opponent has played against you. Also, after playing a Gasoline, Spare Tire or Repair Card, you must first play a Roll Card on a subsequent turn in order to play further Distance Cards."
+	},
+
+	"cardsNames":
+	{
+		"outOfGas": "Out Of Gas",
+		"flatTire": "Flat Tire",
+		"accident": "Accident",
+		"stop": "Stop",
+		"speedLimit": "Speed Limit",
+		"gasoline": "Gasoline",
+		"spareTire": "Spare Tire",
+		"repair": "Repair",
+		"roll": "Roll"
+	}
+
+	"rulesFileName": "rules.txt",
+	"rulesUrl": "https://en.wikibooks.org/wiki/Card_Games/Mille_Bornes"
+}
