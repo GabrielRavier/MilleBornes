@@ -5,7 +5,7 @@
 
 class Game
 {
-private:
+private:	
 	Deck deck;
 	std::vector<Player> m_players;
 

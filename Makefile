@@ -22,14 +22,14 @@ OPTIMISATIONS := -O3 -frename-registers
 # OPTIMISATIONS += -flto
 # Link-time optimizing makes the linking super long so it's are unactivated by default
 
-CXXFLAGS = $(CXX) $(OPTIMISATIONS) $(WARNINGS) -std=c++17 -IjsonModernCpp -c -MMD -MP -MF $@.d
+CXXFLAGS = $(CXX) $(OPTIMISATIONS) $(WARNINGS) -std=c++17 -IjsonModernCpp -Isrc -c -MMD -MP -MF $@.d
 LDFLAGS := $(CXX) $(OPTIMISATIONS) $(WARNINGS) -s
 
 ifeq ($(detected_OS),Windows)
 	LDFLAGS += -static
 endif
 
-MAIN := Card Deck error filesystem Game loadConfig main Player
+MAIN := Card Deck error filesystem Game loadConfig log main Player cards/Accident
 
 OBJS := $(addprefix obj/, $(addsuffix .o, $(MAIN)))
 DEPS := $(addsuffix .d, $(OBJS))
@@ -39,8 +39,8 @@ all: bin/MilleBornes
 bin/MilleBornes: $(OBJS)
 	@mkdir -p $(@D)
 	$(LDFLAGS) $(OBJS) -o $@
-	@rm bin/data
-	@cp data bin/data
+	@rm -rf bin/data
+	@cp -a data/. bin/data
 
 # general compile
 obj/%.o: src/%.cpp
